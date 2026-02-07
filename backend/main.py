@@ -25,6 +25,10 @@ app.add_middleware(
 async def root():
     return {"message": "Campaign AI API is running", "docs": "/docs"}
 
+@app.get("/healthz")
+async def health_check():
+    return {"status": "healthy"}
+
 @app.post("/upload")
 async def upload(file: UploadFile = File(...)):
     file_id = str(uuid.uuid4())
