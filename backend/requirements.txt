@@ -1,0 +1,7 @@
+fastapi==0.115.12
+uvicorn==0.34.2
+openai==2.15.0
+python-multipart==0.0.20
+pymupdf==1.26.7
+openpyxl==3.1.5
+python-dotenv==1.0.0

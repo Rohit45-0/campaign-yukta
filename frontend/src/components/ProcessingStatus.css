@@ -1,0 +1,92 @@
+.processing-status {
+  margin-top: 20px;
+}
+
+.status-processing,
+.status-success,
+.status-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.status-processing {
+  background: #fff9e6;
+  border: 1px solid #ffd700;
+}
+
+.status-success {
+  background: #e8f5e9;
+  border: 1px solid #4caf50;
+}
+
+.status-error {
+  background: #ffebee;
+  border: 1px solid #f44336;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ffd700;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.status-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.status-text {
+  margin-bottom: 15px;
+}
+
+.status-text h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.status-text p {
+  font-size: 14px;
+  color: #666;
+}
+
+.error-message {
+  color: #d32f2f !important;
+  word-break: break-word;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #F7941D;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.status-success .btn,
+.status-error .btn {
+  margin-top: 10px;
+}

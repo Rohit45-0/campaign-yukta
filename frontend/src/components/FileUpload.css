@@ -1,0 +1,113 @@
+.file-upload {
+  margin-bottom: 20px;
+}
+
+.dropzone {
+  border: 2px dashed #d0d0d0;
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #fafafa;
+}
+
+.dropzone:hover:not(.disabled) {
+  border-color: #F7941D;
+  background: #fff8f0;
+}
+
+.dropzone.dragging {
+  border-color: #F7941D;
+  background: #fff5e6;
+  transform: scale(1.02);
+}
+
+.dropzone.has-file {
+  border-style: solid;
+  border-color: #F7941D;
+  background: #fff8f0;
+  padding: 20px;
+}
+
+.dropzone.disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.dropzone-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.dropzone-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.dropzone-subtext {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.dropzone-hint {
+  font-size: 12px;
+  color: #999;
+  background: #eee;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.file-preview {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+}
+
+.file-icon {
+  font-size: 40px;
+}
+
+.file-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.file-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-size {
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+}
+
+.file-remove {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: #ff4757;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.file-remove:hover {
+  background: #ff3344;
+  transform: scale(1.1);
+}
